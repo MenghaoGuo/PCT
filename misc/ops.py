@@ -4,9 +4,6 @@ import jittor as jt
 from jittor import nn
 from jittor.contrib import concat 
 
-jt.flags.use_cuda = 1
-
-
 def index_points(points, idx):
     """
     Input:
