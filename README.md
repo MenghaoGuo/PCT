@@ -2,14 +2,27 @@
 
 This is a Jittor implementation of PCT: Point Cloud Transformer.
 
+
+![image](https://github.com/MenghaoGuo/PCT/blob/main/imgs/architecture.png)
+
+![image](https://github.com/MenghaoGuo/PCT/blob/main/imgs/attention.png)
+
+
+
 ## Jittor
 
 Jittor is a  high-performance deep learning framework which is easy to learn and use. It provides interfaces like pytorch.
 
-You can learn how to use jittor in jittor homepage:  https://cg.cs.tsinghua.edu.cn/jittor/
+You can learn how to use Jittor in following links:
+
+Jittor homepage:  https://cg.cs.tsinghua.edu.cn/jittor/
+
+Jittor github:  https://github.com/Jittor/jittor
 
 ## Description
 
 Paper link: https://cg.cs.tsinghua.edu.cn/papers/PCT.pdf
 
-Now, we just release the core code of our paper and all code and pretrained model will be available after peer review.
+Now, we just release the core code of our paper and all code and pretrained models will be available after peer review.
+
+
