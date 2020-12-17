@@ -2,6 +2,7 @@
 
 This is a Jittor implementation of PCT: Point Cloud Transformer.
 
+Paper link: https://cg.cs.tsinghua.edu.cn/papers/PCT.pdf
 
 ![image](https://github.com/MenghaoGuo/PCT/blob/main/imgs/architecture.png)
 
@@ -21,7 +22,6 @@ Jittor github:  https://github.com/Jittor/jittor
 
 ## Description
 
-Paper link: https://cg.cs.tsinghua.edu.cn/papers/PCT.pdf
 
 Now, we just release the core code of our paper and all code and pretrained models will be available after peer review.
 
