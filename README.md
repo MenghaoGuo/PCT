@@ -12,7 +12,7 @@ Paper link: https://cg.cs.tsinghua.edu.cn/papers/PCT.pdf
 
 ## Jittor
 
-Jittor is a  high-performance deep learning framework which is easy to learn and use. It provides interfaces like pytorch.
+Jittor is a  high-performance deep learning framework which is easy to learn and use. It provides interfaces like Pytorch.
 
 You can learn how to use Jittor in following links:
 
@@ -23,6 +23,6 @@ Jittor github:  https://github.com/Jittor/jittor
 ## Description
 
 
-Now, we just release the core code of our paper and all code and pretrained models will be available after peer review.
+Now, we just release the core code of our paper and all code and pretrained models will be available soon.
 
 
