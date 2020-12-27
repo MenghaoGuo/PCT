@@ -7,7 +7,6 @@ from misc.ops import FurthestPointSampler
 from misc.ops import knn_point, index_points
 
 
-
 def sample_and_group(npoint, nsample, xyz, points):
     B, N, C = xyz.shape
     S = npoint 
@@ -221,3 +220,14 @@ class SA_Layer(nn.Module):
         x_r = self.act(self.after_norm(self.trans_conv(x - x_r)))
         x = x + x_r
         return x
+
+if __name__ == '__main__':
+    
+    jt.flags.use_cuda=1
+    input_points = init.gauss((16, 3, 1024), dtype='float32')  # B, D, N 
+
+
+    network = Point_Transformer()
+    out_logits = network(input_points)
+    print (out_logits.shape)
+
