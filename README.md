@@ -23,7 +23,7 @@ Jittor github:  https://github.com/Jittor/jittor
 ## Description
 
 
-Now, we just release the core code of our paper and all code and pretrained models will be available soon.
+Now, we only release the core code of our paper. All code and pretrained models will be available soon.
 
 ## Citation
 
