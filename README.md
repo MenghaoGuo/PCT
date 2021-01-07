@@ -9,9 +9,14 @@ Paper link: https://arxiv.org/pdf/2012.09688.pdf
 
 The irregular domain and lack of ordering make it challenging to design deep neural networks for point cloud processing. This paper presents a novel framework named Point Cloud Transformer(PCT) for point cloud learning. PCT is based on Transformer, which achieves huge success in natural language processing and displays great potential in image processing. It is inherently permutation invariant for processing a sequence of points, making it well-suited for point cloud learning. To better capture local context within the point cloud, we enhance input embedding with the support of farthest point sampling and nearest neighbor search. Extensive experiments demonstrate that the PCT achieves the state-of-the-art performance on shape classification, part segmentation and normal estimation tasks
 
-![image](https://github.com/MenghaoGuo/PCT/blob/main/imgs/architecture.png)
 
 ![image](https://github.com/MenghaoGuo/PCT/blob/main/imgs/attention.png)
+
+
+## Architecture
+
+
+![image](https://github.com/MenghaoGuo/PCT/blob/main/imgs/architecture.png)
 
 
 
