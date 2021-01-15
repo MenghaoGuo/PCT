@@ -30,6 +30,8 @@ Jittor homepage:  https://cg.cs.tsinghua.edu.cn/jittor/
 
 Jittor github:  https://github.com/Jittor/jittor
 
+If you has any questions about Jittor, you can ask in Jittor developer QQ Group: 761222083
+
 ## Description
 
 
