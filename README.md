@@ -34,8 +34,8 @@ If you has any questions about Jittor or PCT, you can ask in Jittor developer QQ
 
 ## Other implementation
 
-##### Version 1 : https://github.com/uyzhang/PCT_Pytorch (Pytorch version with classification acc 93.2%)
-##### Version 2 : https://github.com/qq456cvb/Point-Transformers (Pytorch version with classification acc 92.6%)
+##### Version 1 : https://github.com/uyzhang/PCT_Pytorch (Pytorch version with classification acc 93.2% on ModelNet40)
+##### Version 2 : https://github.com/qq456cvb/Point-Transformers (Pytorch version with classification acc 92.6% on ModelNet40)
 
 
 ## Description
