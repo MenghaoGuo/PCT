@@ -67,7 +67,7 @@ class Point_Transformer2(nn.Module):
         new_xyz, new_feature = sample_and_group(npoint=256, nsample=32, xyz=new_xyz, points=feature) 
         feature_1 = self.gather_local_1(new_feature)
         
-        x = self.pt_last(feature_1)
+        x = self.pt_last(feature_1, new_xyz)
         x = concat([x, feature_1], dim=1)
         x = self.conv_fuse(x)
         x = jt.max(x, 2)
@@ -143,10 +143,9 @@ class Point_Transformer_Last(nn.Module):
     def __init__(self, channels=256):
         super(Point_Transformer_Last, self).__init__()
         self.conv1 = nn.Conv1d(channels, channels, kernel_size=1, bias=False)
-        self.conv2 = nn.Conv1d(channels, channels, kernel_size=1, bias=False)
+        self.conv_pos = nn.Conv1d(3, channels, kernel_size=1, bias=False)
 
         self.bn1 = nn.BatchNorm1d(channels)
-        self.bn2 = nn.BatchNorm1d(channels)
 
         self.sa1 = SA_Layer(channels)
         self.sa2 = SA_Layer(channels)
@@ -154,21 +153,23 @@ class Point_Transformer_Last(nn.Module):
         self.sa4 = SA_Layer(channels)
 
         self.relu = nn.ReLU()
-    def execute(self, x):
+    def execute(self, x, xyz):
         # 
         # b, 3, npoint, nsample  
         # conv2d 3 -> 128 channels 1, 1
         # b * npoint, c, nsample 
         # permute reshape
         batch_size, _, N = x.size()
-
+        # add position embedding
+        xyz = xyz.permute(0, 2, 1)
+        xyz = self.pos_xyz(xyz)
+        # end
         x = self.relu(self.bn1(self.conv1(x))) # B, D, N
-        x = self.relu(self.bn2(self.conv2(x)))
 
-        x1 = self.sa1(x)
-        x2 = self.sa2(x1)
-        x3 = self.sa3(x2)
-        x4 = self.sa4(x3)
+        x1 = self.sa1(x, xyz)
+        x2 = self.sa2(x1, xyz)
+        x3 = self.sa3(x2, xyz)
+        x4 = self.sa4(x3, xyz)
         
         x = concat((x1, x2, x3, x4), dim=1)
 
@@ -209,7 +210,8 @@ class SA_Layer(nn.Module):
         self.act = nn.ReLU()
         self.softmax = nn.Softmax(dim=-1)
 
-    def execute(self, x):
+    def execute(self, x, xyz):
+        x = x + xyz
         x_q = self.q_conv(x).permute(0, 2, 1) # b, n, c 
         x_k = self.k_conv(x)# b, c, n        
         x_v = self.v_conv(x)
