@@ -66,7 +66,7 @@ class Point_Transformer2(nn.Module):
         feature = feature_0.permute(0, 2, 1)
         new_xyz, new_feature = sample_and_group(npoint=256, nsample=32, xyz=new_xyz, points=feature) 
         feature_1 = self.gather_local_1(new_feature)
-        
+        # add position embedding on each layer
         x = self.pt_last(feature_1, new_xyz)
         x = concat([x, feature_1], dim=1)
         x = self.conv_fuse(x)
