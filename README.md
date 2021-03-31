@@ -7,8 +7,8 @@ Paper link: https://arxiv.org/pdf/2012.09688.pdf
 
 ## News:
 
-2021.3.31 : We try to add simple position embedding in each self-attention layer, we get a more stable training process and 93.3% accuracy on modelnet40 dataset, code is available.
-2021.3.29 : PCT has been accepted by CVMJ.
+* 2021.3.31 : We try to add simple position embedding in each self-attention layer, we get a more stable training process and 93.3% accuracy on modelnet40 dataset, code is available.
+* 2021.3.29 : PCT has been accepted by CVMJ.
 
 
 ## Astract
