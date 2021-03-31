@@ -5,11 +5,10 @@ This is a Jittor implementation of PCT: Point Cloud Transformer.
 Paper link: https://arxiv.org/pdf/2012.09688.pdf
 
 
-## News:
+## <font color=red>News</font> :
 
-* <font color="#dd0000"> 2021.3.31 </font><br /> 
-: We try to add simple position embedding in each self-attention layer, we get a more stable training process and 93.3% accuracy on modelnet40 dataset. code updates in classification network.
-* 2021.3.29 : PCT has been accepted by CVMJ.
+* 2021.3.31 : We try to add simple position embedding in each self-attention layer, we get a more stable training process and 93.3% accuracy on modelnet40 dataset. Code updates in classification network.
+* 2021.3.29 : PCT has been accepted by Computational Visual Media Journal (CVMJ).
 
 
 ## Astract
