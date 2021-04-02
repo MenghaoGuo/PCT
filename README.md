@@ -7,7 +7,7 @@ Paper link: https://arxiv.org/pdf/2012.09688.pdf
 
 ## <font color=red>News</font> :
 
-* 2021.3.31 : We try to add simple position embedding in each self-attention layer, we get a more stable training process and 93.3% accuracy on modelnet40 dataset. Code updates in classification network.
+* 2021.3.31 : We try to add simple position embedding in each self-attention layer, we get a more stable training process and 93.3% (5 run best) accuracy on modelnet40 dataset. Code updates in classification network.
 * 2021.3.29 : PCT has been accepted by Computational Visual Media Journal (CVMJ).
 
 
