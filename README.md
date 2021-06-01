@@ -41,7 +41,7 @@ If you has any questions about Jittor, you can ask in Jittor developer QQ Group:
 
 ## Other implementation
 
-##### Version 1 : https://github.com/uyzhang/PCT_Pytorch (Pytorch version with classification acc 93.2% on ModelNet40)
+##### Version 1 : https://github.com/Strawberry-Eat-Mango/PCT_Pytorch (Pytorch version with classification acc 93.2% on ModelNet40)
 ##### Version 2 : https://github.com/qq456cvb/Point-Transformers (Pytorch version with classification acc 92.6% on ModelNet40)
 #### About part segmentation, if you want to reproduce the part segmentation results, you can refer this : https://github.com/AnTao97/dgcnn.pytorch 
 
