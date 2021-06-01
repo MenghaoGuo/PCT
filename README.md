@@ -45,11 +45,11 @@ If you has any questions about Jittor, you can ask in Jittor developer QQ Group:
 ##### Version 2 : https://github.com/qq456cvb/Point-Transformers (Pytorch version with classification acc 92.6% on ModelNet40)
 #### About part segmentation, if you want to reproduce the part segmentation results, you can refer this : https://github.com/AnTao97/dgcnn.pytorch 
 
-## Description
+<!-- ## Description -->
 
 
-Now, we only release the core code of our paper. All code and pretrained models will be available soon.
-
+<!-- Now, we only release the core code of our paper. All code and pretrained models will be available soon.
+ -->
 ## Citation
 
 If it is helpful for your work, please cite this paper:
