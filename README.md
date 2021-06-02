@@ -54,18 +54,18 @@ If you has any questions about Jittor, you can ask in Jittor developer QQ Group:
 
 If it is helpful for your work, please cite this paper:
 ```
-@article{guo2021pct,
-  author    = {Meng{-}Hao Guo and
-               Junxiong Cai and
-               Zheng{-}Ning Liu and
-               Tai{-}Jiang Mu and
-               Ralph R. Martin and
-               Shi{-}Min Hu},
-  title     = {{PCT:} Point cloud transformer},
-  journal   = {Comput. Vis. Media},
-  volume    = {7},
-  number    = {2},
-  pages     = {187--199},
-  year      = {2021},
+@article{Guo_2021,
+   title={PCT: Point cloud transformer},
+   volume={7},
+   ISSN={2096-0662},
+   url={http://dx.doi.org/10.1007/s41095-021-0229-5},
+   DOI={10.1007/s41095-021-0229-5},
+   number={2},
+   journal={Computational Visual Media},
+   publisher={Springer Science and Business Media LLC},
+   author={Guo, Meng-Hao and Cai, Jun-Xiong and Liu, Zheng-Ning and Mu, Tai-Jiang and Martin, Ralph R. and Hu, Shi-Min},
+   year={2021},
+   month={Apr},
+   pages={187–199}
 }
 ```
